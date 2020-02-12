@@ -1,0 +1,19 @@
+program test;
+begin
+; single if statement
+if x then y:=1;
+
+; recursive if statements
+if x then if y then z:=3;
+
+if x then if y then if z then k:=1;
+
+; expression as a condition in if statement
+if x+2 and x then p:=1;
+
+; block as a branch of if statement
+if x+2 then
+	begin
+		p:=1
+	end
+end.
